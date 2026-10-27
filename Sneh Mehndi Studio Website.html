@@ -1,577 +1,234 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head <meta name="google-site-verification" content="cc6JwPjbnMfDLtn4aVdYOZw-_pAppQQV0tUddNUL6OY" />/>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneh Mehndi | Professional Mehndi Artist Bareilly</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        royal: {
-                            800: '#5c121e',
-                            900: '#4a0e17',
-                            950: '#2d080e',
-                        },
-                        gold: {
-                            300: '#f6e095',
-                            400: '#e5c365',
-                            500: '#d4af37',
-                            600: '#b59226',
-                        },
-                        ivory: {
-                            50: '#fdfbf7',
-                            100: '#f7f2e8',
-                            200: '#ece1cf',
-                        }
-                    },
-                    fontFamily: {
-                        cursive: ['"Great Vibes"', 'cursive'],
-                        serif: ['"Cinzel"', 'serif'],
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Google Search Console Verification Meta Tag -->
+    <meta name="google-site-verification" content="PASTE_YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
+
+    <!-- SEO Title & Description -->
+    <title>Sneh Mehndi | Professional Home Service Mehndi Artist in Bareilly</title>
+    <meta name="description" content="Sneh Mehndi provides professional home service for Bridal Mehndi, Arabic patterns, and Guest Mehndi in Modern Village Dohna, Park Avenue, and Bareilly. Book now: +91 8979459971.">
+    <meta name="keywords" content="Sneh Mehndi, Mehndi Artist Bareilly, Bridal Mehndi Dohna, Home Service Henna Park Avenue, Henna Design Bareilly">
+    <meta name="author" content="Sneh Mehndi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Sneh Mehndi - Home Service Mehndi Artist">
+    <meta property="og:description" content="Exquisite Henna & Mehndi Services at your doorstep in Bareilly, Dohna, and Park Avenue. Call +91 8979459971.">
+    <meta property="og:type" content="website">
+
+    <!-- Styling -->
     <style>
-        .editable-active {
-            outline: 2px dashed #d4af37 !important;
-            outline-offset: 4px;
-            background-color: rgba(212, 175, 55, 0.12) !important;
+        :root {
+            --primary-color: #8b0000;
+            --accent-color: #d4af37;
+            --bg-color: #fffaf0;
+            --text-color: #2b2b2b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .edit-controls {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            font-size: 1rem;
+            cursor: pointer;
             border-radius: 4px;
+            margin-left: 0.5rem;
+        }
+
+        .btn-gold {
+            background-color: var(--accent-color);
+            color: #000;
+            font-weight: bold;
+        }
+
+        .editable-area {
+            border: 1px dashed transparent;
+            padding: 0.5rem;
+        }
+
+        .editing .editable-area {
+            border-color: var(--accent-color);
+            background-color: #ffffff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .contact-box a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            background-color: #eee;
         }
     </style>
 </head>
-<body class="bg-ivory-50 text-gray-800 font-sans antialiased selection:bg-gold-500 selection:text-royal-900 pb-16 md:pb-0">
+<body>
 
-    <!-- Top Admin Bar for Editable Controls -->
-    <div class="bg-royal-950 text-gold-300 py-2.5 px-4 sticky top-0 z-50 shadow-md border-b border-gold-500/30">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2 text-xs md:text-sm">
-            <div class="flex items-center gap-2">
-                <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span class="font-medium text-gray-200">Sneh Mehndi Admin Bar</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <button id="editToggleBtn" onclick="toggleEditMode()" class="bg-gold-500 hover:bg-gold-600 text-royal-900 font-bold px-3 py-1 rounded-lg text-xs transition flex items-center gap-1.5 shadow">
-                    <i class="fa-solid fa-pen-to-square"></i> <span id="editBtnText">Enable Live Edit Mode</span>
-                </button>
-                <button onclick="resetDefaultContent()" class="bg-white/10 hover:bg-white/20 text-gray-300 font-semibold px-3 py-1 rounded-lg text-xs transition">
-                    <i class="fa-solid fa-rotate-left"></i> Reset Defaults
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header Navigation -->
-    <header class="bg-white/95 backdrop-blur-md sticky top-[41px] z-40 border-b border-gold-500/20 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 rounded-full bg-royal-900 text-gold-500 border-2 border-gold-500 flex items-center justify-center text-2xl font-serif font-bold shadow-md">
-                        S
-                    </div>
-                    <div>
-                        <a href="#" class="font-cursive text-3xl font-bold text-royal-900 leading-none block">Sneh Mehndi</a>
-                        <span class="text-[10px] md:text-xs font-serif uppercase tracking-widest text-gold-600 font-bold block mt-0.5">Bareilly Luxury Henna Studio</span>
-                    </div>
-                </div>
-
-                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
-                    <a href="#about" class="hover:text-royal-900 transition">About</a>
-                    <a href="#locations" class="hover:text-royal-900 transition">Locations</a>
-                    <a href="#gallery" class="hover:text-royal-900 transition">Gallery</a>
-                    <a href="#packages" class="hover:text-royal-900 transition">3 Main Options</a>
-                    <a href="#booking" class="hover:text-royal-900 transition">Book Now</a>
-                </nav>
-
-                <div class="flex items-center gap-3">
-                    <a href="tel:+918979459971" class="hidden sm:flex items-center gap-2 bg-royal-900 hover:bg-royal-800 text-gold-400 px-4 py-2.5 rounded-xl text-xs font-bold transition shadow-md">
-                        <i class="fa-solid fa-phone"></i> +91 8979459971
-                    </a>
-                    <a href="https://wa.me/918979459971?text=Hello%20Sneh%20Mehndi!%20I%20would%20like%20to%20inquire%20about%20booking%20a%20mehndi%20session." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition shadow-md flex items-center gap-1.5">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1>Sneh Mehndi</h1>
+        <p>Professional Home Service Mehndi Artist in Bareilly</p>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-royal-950 via-royal-900 to-royal-800 text-white py-20 lg:py-28 px-4 overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:20px_20px]"></div>
-        <div class="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-12 items-center">
-            
-            <div class="space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/30 rounded-full px-4 py-1.5">
-                    <i class="fa-solid fa-location-dot text-gold-400 text-xs"></i>
-                    <span id="hero-tagline" contenteditable="false" class="editable text-xs font-semibold text-gold-300 tracking-wider uppercase">Modern Village Dohna & Park Avenue, Bareilly</span>
+    <div class="container">
+        <!-- Live Edit Toggle Bar -->
+        <div class="edit-controls">
+            <button id="editBtn" class="btn btn-gold" onclick="toggleEdit()">✏️ Edit Content Live</button>
+            <button id="saveBtn" class="btn" onclick="saveContent()" style="display: none;">💾 Save Changes</button>
+        </div>
+
+        <div id="contentSection" class="editable-area">
+            <h2>Our Specialty Services</h2>
+            <p>We provide delicate, long-lasting, and deep-stain natural Henna designs tailored for your special occasions right at your doorstep.</p>
+
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Bridal Mehndi</h3>
+                    <p>Intricate full-hand and full-leg customized bridal designs telling your special story with traditional motifs.</p>
                 </div>
+                <div class="card">
+                    <h3>Arabic & Modern Mehndi</h3>
+                    <p>Stylish floral, vine, geometric, and minimalist modern patterns for chic and quick application.</p>
+                </div>
+                <div class="card">
+                    <h3>Guest & Family Packages</h3>
+                    <p>Special group packages for sangeet ceremonies, festivals, Karwa Chauth, Teej, and family functions.</p>
+                </div>
+            </div>
 
-                <h1 id="hero-title" contenteditable="false" class="editable font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
-                    Sneh Mehndi Studio
-                </h1>
-
-                <p id="hero-subtitle" contenteditable="false" class="editable text-ivory-100 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-                    Premium organic bridal henna art delivered right to your doorstep in Modern Village Dohna, Park Avenue, and across Bareilly. Deep dark stain guaranteed.
+            <div class="contact-box" style="margin-top: 2.5rem;">
+                <h2>Book Your Home Appointment Today</h2>
+                <p><strong>Service Areas:</strong> Modern Village Dohna, Park Avenue, and all locations in Bareilly, UP.</p>
+                <p style="font-size: 1.3rem; margin-top: 0.8rem;">
+                    <strong>Phone / WhatsApp:</strong> <a href="tel:+918979459971">+91 8979459971</a>
                 </p>
-
-                <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
-                    <a href="tel:+918979459971" class="bg-gold-500 hover:bg-gold-600 text-royal-950 font-bold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition flex items-center gap-2">
-                        <i class="fa-solid fa-phone"></i> Call 8979459971
-                    </a>
-                    <a href="#packages" class="bg-white/10 hover:bg-white/20 border border-gold-500/40 text-gold-300 font-semibold px-7 py-3.5 rounded-xl transition">
-                        View 3 Main Packages
-                    </a>
-                </div>
-
-                <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 text-center lg:text-left">
-                    <div>
-                        <p class="font-serif text-2xl font-bold text-gold-400">100%</p>
-                        <p class="text-xs text-gray-300">Organic Henna</p>
-                    </div>
-                    <div>
-                        <p class="font-serif text-2xl font-bold text-gold-400">Home</p>
-                        <p class="text-xs text-gray-300">Visits Available</p>
-                    </div>
-                    <div>
-                        <p class="font-serif text-2xl font-bold text-gold-400">Bareilly</p>
-                        <p class="text-xs text-gray-300">Wide Coverage</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hero Image Frame -->
-            <div class="relative flex justify-center">
-                <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl overflow-hidden border-4 border-gold-500 shadow-2xl">
-                    <img id="hero-img" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800" alt="Sneh Mehndi Bridal Art" class="w-full h-full object-cover">
-                </div>
-                <div class="absolute -bottom-6 bg-white text-royal-950 p-4 rounded-2xl shadow-2xl border-2 border-gold-500 flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-royal-900 text-gold-400 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <div>
-                        <p id="hero-badge-title" contenteditable="false" class="editable font-bold text-sm">Doorstep Home Visits</p>
-                        <p id="hero-badge-desc" contenteditable="false" class="editable text-xs text-gray-600">Specialized in Dohna & Park Avenue</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Location & Home Visit Highlight -->
-    <section id="locations" class="py-16 bg-white border-b border-gold-500/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-gold-600 font-serif font-bold text-xs uppercase tracking-widest">Doorstep Service</span>
-                <h2 id="loc-title" contenteditable="false" class="editable font-serif text-3xl sm:text-4xl text-royal-900 font-bold mt-1">Home Visits in Modern Village Dohna & Park Avenue</h2>
-                <p id="loc-desc" contenteditable="false" class="editable text-gray-600 text-sm mt-3">We bring our luxury henna experience directly to your home. Enjoy personalized bridal and guest sessions in the comfort of your living room.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-ivory-50 p-6 rounded-2xl border border-ivory-200 hover:border-gold-500 transition shadow-sm">
-                    <div class="w-12 h-12 rounded-xl bg-royal-900 text-gold-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-house-chimney"></i>
-                    </div>
-                    <h3 id="loc-card1-title" contenteditable="false" class="editable font-bold text-lg text-royal-900 mb-2">Modern Village Dohna</h3>
-                    <p id="loc-card1-desc" contenteditable="false" class="editable text-gray-600 text-sm">Full home visit services available across Modern Village Dohna for weddings, Karwa Chauth, Teej, and festivals.</p>
-                </div>
-
-                <div class="bg-ivory-50 p-6 rounded-2xl border border-ivory-200 hover:border-gold-500 transition shadow-sm">
-                    <div class="w-12 h-12 rounded-xl bg-royal-900 text-gold-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-building-user"></i>
-                    </div>
-                    <h3 id="loc-card2-title" contenteditable="false" class="editable font-bold text-lg text-royal-900 mb-2">Park Avenue, Bareilly</h3>
-                    <p id="loc-card2-desc" contenteditable="false" class="editable text-gray-600 text-sm">Prompt on-demand bridal and group appointments at your doorstep in Park Avenue, Bareilly.</p>
-                </div>
-
-                <div class="bg-ivory-50 p-6 rounded-2xl border border-ivory-200 hover:border-gold-500 transition shadow-sm">
-                    <div class="w-12 h-12 rounded-xl bg-royal-900 text-gold-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </div>
-                    <h3 id="loc-card3-title" contenteditable="false" class="editable font-bold text-lg text-royal-900 mb-2">All Over Bareilly</h3>
-                    <p id="loc-card3-desc" contenteditable="false" class="editable text-gray-600 text-sm">We cover all major locations in Bareilly for wedding parties and large sangeet gatherings.</p>
-                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Portfolio Gallery Section -->
-    <section id="gallery" class="py-16 bg-ivory-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-gold-600 font-serif font-bold text-xs uppercase tracking-widest">Our Artworks</span>
-                <h2 id="gallery-title" contenteditable="false" class="editable font-serif text-3xl sm:text-4xl text-royal-900 font-bold mt-1">Sneh Mehndi Portfolio Gallery</h2>
-                <p id="gallery-desc" contenteditable="false" class="editable text-gray-600 text-sm mt-2">Explore our custom creations featuring deep organic color and fine detail.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-md bg-white border border-gold-500/20">
-                    <div class="h-72 overflow-hidden">
-                        <img id="gal-img-1" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800" alt="Bridal Mehndi Art" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-4 bg-white">
-                        <h4 id="gal-txt-1" contenteditable="false" class="editable font-bold text-royal-900">Traditional Royal Bridal Hand</h4>
-                        <p class="text-xs text-gray-500">Intricate Dulha-Dulhan Motifs</p>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-md bg-white border border-gold-500/20">
-                    <div class="h-72 overflow-hidden">
-                        <img id="gal-img-2" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" alt="Arabic Henna" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-4 bg-white">
-                        <h4 id="gal-txt-2" contenteditable="false" class="editable font-bold text-royal-900">Sleek Floral Arabic Vine</h4>
-                        <p class="text-xs text-gray-500">Modern Shaded Patterns</p>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-md bg-white border border-gold-500/20">
-                    <div class="h-72 overflow-hidden">
-                        <img id="gal-img-3" src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=800" alt="Feet Mehndi Design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-4 bg-white">
-                        <h4 id="gal-txt-3" contenteditable="false" class="editable font-bold text-royal-900">Heavy Bridal Feet Coverage</h4>
-                        <p class="text-xs text-gray-500">Payal & Anklet Motifs</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3 MAIN OPTIONS / PACKAGES SECTION -->
-    <section id="packages" class="py-16 bg-white border-t border-gold-500/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center max-w-2xl mx-auto mb-14">
-                <span class="text-gold-600 font-serif font-bold text-xs uppercase tracking-widest">Pricing & Styles</span>
-                <h2 id="pkg-sec-title" contenteditable="false" class="editable font-serif text-3xl sm:text-4xl text-royal-900 font-bold mt-1">Our 3 Main Options</h2>
-                <p id="pkg-sec-desc" contenteditable="false" class="editable text-gray-600 text-sm mt-2">Choose the perfect package for your wedding, sangeet, or celebration. Editable prices and details.</p>
-            </div>
-
-            <div class="grid lg:grid-cols-3 gap-8">
-                
-                <!-- OPTION 1: BRIDAL PACKAGE -->
-                <div class="relative bg-ivory-50 rounded-3xl p-8 border-2 border-gold-500 shadow-xl flex flex-col justify-between transform hover:-translate-y-1 transition duration-300">
-                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold-500 text-royal-950 text-xs font-serif font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">
-                        Option 1 • Most Requested
-                    </span>
-                    <div>
-                        <div class="text-center pb-6 border-b border-gold-500/30">
-                            <div class="w-14 h-14 mx-auto rounded-full bg-royal-900 text-gold-400 flex items-center justify-center text-2xl mb-3 shadow">
-                                <i class="fa-solid fa-crown"></i>
-                            </div>
-                            <h3 id="opt1-title" contenteditable="false" class="editable font-serif font-bold text-2xl text-royal-900">Bridal Mehndi Package</h3>
-                            <p id="opt1-subtitle" contenteditable="false" class="editable text-xs text-gray-600 mt-1">Full traditional heavy design for hands & feet</p>
-                            
-                            <div class="mt-4">
-                                <span id="opt1-price" contenteditable="false" class="editable font-serif text-4xl font-extrabold text-royal-900">₹5,100</span>
-                                <span class="text-xs text-gray-500"> / starting price</span>
-                            </div>
-                        </div>
-
-                        <ul class="py-6 space-y-3 text-sm text-gray-700">
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-xs"></i>
-                                <span id="opt1-feat1" contenteditable="false" class="editable">Full front & back hands up to elbows</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-xs"></i>
-                                <span id="opt1-feat2" contenteditable="false" class="editable">Heavy feet coverage with anklet details</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-xs"></i>
-                                <span id="opt1-feat3" contenteditable="false" class="editable">Intricate Dulha-Dulhan & wedding barat motifs</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-xs"></i>
-                                <span id="opt1-feat4" contenteditable="false" class="editable">100% Organic Henna + Aftercare oils included</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <a href="https://wa.me/918979459971?text=Hello%20Sneh%20Mehndi!%20I%20want%20to%20book%20Option%201%20(Bridal%20Mehndi%20Package)." target="_blank" class="w-full bg-gold-500 hover:bg-gold-600 text-royal-950 font-bold py-3.5 rounded-xl text-center shadow transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Book Bridal Package
-                    </a>
-                </div>
-
-                <!-- OPTION 2: ARABIC & MODERN PACKAGE -->
-                <div class="relative bg-white rounded-3xl p-8 border border-gray-200 hover:border-gold-500 shadow-md flex flex-col justify-between transition duration-300">
-                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-royal-900 text-gold-400 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
-                        Option 2 • Modern Style
-                    </span>
-                    <div>
-                        <div class="text-center pb-6 border-b border-gray-100">
-                            <div class="w-14 h-14 mx-auto rounded-full bg-royal-900/10 text-royal-900 flex items-center justify-center text-2xl mb-3">
-                                <i class="fa-solid fa-gem"></i>
-                            </div>
-                            <h3 id="opt2-title" contenteditable="false" class="editable font-serif font-bold text-2xl text-royal-900">Arabic & Modern Package</h3>
-                            <p id="opt2-subtitle" contenteditable="false" class="editable text-xs text-gray-600 mt-1">Stylish floral/geometric vines for hands</p>
-                            
-                            <div class="mt-4">
-                                <span id="opt2-price" contenteditable="false" class="editable font-serif text-4xl font-extrabold text-royal-900">₹2,100</span>
-                                <span class="text-xs text-gray-500"> / starting price</span>
-                            </div>
-                        </div>
-
-                        <ul class="py-6 space-y-3 text-sm text-gray-700">
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt2-feat1" contenteditable="false" class="editable">Sleek Arabic bel & shading work</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt2-feat2" contenteditable="false" class="editable">Modern geometric & mandala palm designs</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt2-feat3" contenteditable="false" class="editable">Front and back hand coverage</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt2-feat4" contenteditable="false" class="editable">Fast application with deep dark stain</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <a href="https://wa.me/918979459971?text=Hello%20Sneh%20Mehndi!%20I%20want%20to%20book%20Option%202%20(Arabic%20%26%20Modern%20Package)." target="_blank" class="w-full bg-royal-900 hover:bg-royal-800 text-white font-bold py-3.5 rounded-xl text-center shadow transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Book Arabic Package
-                    </a>
-                </div>
-
-                <!-- OPTION 3: GUEST & FAMILY PACKAGE -->
-                <div class="relative bg-white rounded-3xl p-8 border border-gray-200 hover:border-gold-500 shadow-md flex flex-col justify-between transition duration-300">
-                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-royal-900 text-gold-400 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
-                        Option 3 • Party & Sangeet
-                    </span>
-                    <div>
-                        <div class="text-center pb-6 border-b border-gray-100">
-                            <div class="w-14 h-14 mx-auto rounded-full bg-royal-900/10 text-royal-900 flex items-center justify-center text-2xl mb-3">
-                                <i class="fa-solid fa-users"></i>
-                            </div>
-                            <h3 id="opt3-title" contenteditable="false" class="editable font-serif font-bold text-2xl text-royal-900">Guest & Family Package</h3>
-                            <p id="opt3-subtitle" contenteditable="false" class="editable text-xs text-gray-600 mt-1">Minimalist quick designs per hand for guests</p>
-                            
-                            <div class="mt-4">
-                                <span id="opt3-price" contenteditable="false" class="editable font-serif text-4xl font-extrabold text-royal-900">₹1,500</span>
-                                <span class="text-xs text-gray-500"> / starting group rate</span>
-                            </div>
-                        </div>
-
-                        <ul class="py-6 space-y-3 text-sm text-gray-700">
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt3-feat1" contenteditable="false" class="editable">Quick stylish patterns per hand for guests</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt3-feat2" contenteditable="false" class="editable">Covers 5 to 10 family members</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt3-feat3" contenteditable="false" class="editable">Ideal for Sangeet & Mehendi functions</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 text-xs"></i>
-                                <span id="opt3-feat4" contenteditable="false" class="editable">Home visit to Dohna & Park Avenue</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <a href="https://wa.me/918979459971?text=Hello%20Sneh%20Mehndi!%20I%20want%20to%20book%20Option%203%20(Guest%20%26%20Family%20Package)." target="_blank" class="w-full bg-royal-900 hover:bg-royal-800 text-white font-bold py-3.5 rounded-xl text-center shadow transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Book Guest Package
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Direct Booking Form Section -->
-    <section id="booking" class="py-16 max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="bg-gradient-to-br from-royal-950 to-royal-900 rounded-3xl p-8 lg:p-12 text-white shadow-2xl border border-gold-500/30">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                
-                <div>
-                    <span class="text-gold-400 font-serif font-bold text-xs uppercase tracking-widest">Instant WhatsApp Dispatch</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-1 text-white">Book Sneh Mehndi</h2>
-                    <p class="text-ivory-100 text-sm mt-3 leading-relaxed">Fill out the details below to check booking availability for your home in Modern Village Dohna, Park Avenue, or anywhere in Bareilly.</p>
-
-                    <div class="mt-8 space-y-4">
-                        <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
-                            <div class="w-10 h-10 rounded-full bg-gold-500 text-royal-950 flex items-center justify-center font-bold text-lg">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-gold-300 font-semibold">Direct Phone Call</p>
-                                <a href="tel:+918979459971" class="text-lg font-bold hover:underline">+91 8979459971</a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
-                            <div class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-lg">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-gold-300 font-semibold">Direct WhatsApp</p>
-                                <a href="https://wa.me/918979459971" target="_blank" class="text-lg font-bold hover:underline">+91 8979459971</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Interactive Booking Form -->
-                <form onsubmit="sendBookingWhatsApp(event)" class="bg-white text-gray-800 p-6 sm:p-8 rounded-2xl shadow-xl space-y-4">
-                    <h3 class="font-serif text-xl font-bold text-royal-900 border-b pb-3">Reservation Inquiry</h3>
-
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Your Full Name</label>
-                        <input type="text" id="cust-name" required placeholder="Enter your name" class="w-full p-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:border-gold-500">
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Select Preferred Package</label>
-                        <select id="cust-option" class="w-full p-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:border-gold-500">
-                            <option value="Option 1: Bridal Mehndi Package">Option 1: Bridal Mehndi Package</option>
-                            <option value="Option 2: Arabic & Modern Package">Option 2: Arabic & Modern Package</option>
-                            <option value="Option 3: Guest & Family Package">Option 3: Guest & Family Package</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Event Date</label>
-                        <input type="date" id="cust-date" required class="w-full p-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:border-gold-500">
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Home Address / Location</label>
-                        <input type="text" id="cust-address" required placeholder="e.g. House No., Park Avenue / Dohna, Bareilly" class="w-full p-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:border-gold-500">
-                    </div>
-
-                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Send Inquiry to 8979459971
-                    </button>
-                </form>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-royal-950 text-gray-400 py-10 px-4 border-t border-gold-500/20">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-center md:text-left">
-            <div>
-                <h4 class="font-serif text-2xl font-bold text-gold-400">Sneh Mehndi</h4>
-                <p class="text-xs text-gray-400 mt-1">Home Visits in Modern Village Dohna, Park Avenue, and Bareilly</p>
-            </div>
-
-            <div class="flex items-center gap-6">
-                <a href="tel:+918979459971" class="hover:text-gold-400 transition flex items-center gap-2">
-                    <i class="fa-solid fa-phone text-gold-500"></i> +91 8979459971
-                </a>
-                <a href="https://wa.me/918979459971" target="_blank" class="hover:text-gold-400 transition flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-emerald-500"></i> WhatsApp
-                </a>
-            </div>
-
-            <p class="text-xs">© 2026 Sneh Mehndi Studio. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Mobile Sticky Floating Call & WhatsApp Buttons -->
-    <div class="fixed bottom-4 right-4 z-40 flex flex-col gap-3 md:hidden">
-        <a href="tel:+918979459971" class="w-12 h-12 bg-royal-900 text-gold-400 rounded-full flex items-center justify-center shadow-xl border border-gold-500 text-lg">
-            <i class="fa-solid fa-phone"></i>
-        </a>
-        <a href="https://wa.me/918979459971?text=Hello%20Sneh%20Mehndi!%20I%20want%20to%20book%20a%20mehndi%20session." target="_blank" class="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl text-2xl animate-bounce">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
     </div>
 
-    <!-- JavaScript Logic for Live Re-Editable State -->
+    <footer>
+        <p>&copy; 2026 Sneh Mehndi. All rights reserved.</p>
+    </footer>
+
+    <!-- Live Editing Script -->
     <script>
-        let isEditActive = false;
+        // Load saved local updates if available
+        window.onload = function() {
+            const savedData = localStorage.getItem('sneh_mehndi_content');
+            if (savedData) {
+                document.getElementById('contentSection').innerHTML = savedData;
+            }
+        };
 
-        // Initialize saved edits from localStorage
-        window.addEventListener('DOMContentLoaded', () => {
-            loadSavedEdits();
-        });
+        function toggleEdit() {
+            const section = document.getElementById('contentSection');
+            const editBtn = document.getElementById('editBtn');
+            const saveBtn = document.getElementById('saveBtn');
 
-        function loadSavedEdits() {
-            const editables = document.querySelectorAll('.editable');
-            editables.forEach(el => {
-                const savedValue = localStorage.getItem('sneh_edit_' + el.id);
-                if (savedValue !== null) {
-                    el.innerHTML = savedValue;
-                }
-                el.addEventListener('blur', () => {
-                    if (isEditActive && el.id) {
-                        localStorage.setItem('sneh_edit_' + el.id, el.innerHTML);
-                    }
-                });
-            });
-        }
-
-        function toggleEditMode() {
-            isEditActive = !isEditActive;
-            const editables = document.querySelectorAll('.editable');
-            const btnText = document.getElementById('editBtnText');
-            const editBtn = document.getElementById('editToggleBtn');
-
-            editables.forEach(el => {
-                el.contentEditable = isEditActive ? "true" : "false";
-                if (isEditActive) {
-                    el.classList.add('editable-active');
-                } else {
-                    el.classList.remove('editable-active');
-                }
-            });
-
-            if (isEditActive) {
-                btnText.innerText = "Edit Mode: ON (Click text to edit)";
-                editBtn.classList.replace('bg-gold-500', 'bg-emerald-500');
-                editBtn.classList.replace('text-royal-900', 'text-white');
-            } else {
-                btnText.innerText = "Enable Live Edit Mode";
-                editBtn.classList.replace('bg-emerald-500', 'bg-gold-500');
-                editBtn.classList.replace('text-white', 'text-royal-900');
+            const isEditing = section.isContentEditable;
+            if (!isEditing) {
+                section.contentEditable = "true";
+                document.body.classList.add('editing');
+                editBtn.style.display = "none";
+                saveBtn.style.display = "inline-block";
             }
         }
 
-        function resetDefaultContent() {
-            if (confirm("Are you sure you want to reset all custom edits back to default content?")) {
-                const editables = document.querySelectorAll('.editable');
-                editables.forEach(el => {
-                    if (el.id) {
-                        localStorage.removeItem('sneh_edit_' + el.id);
-                    }
-                });
-                window.location.reload();
-            }
-        }
+        function saveContent() {
+            const section = document.getElementById('contentSection');
+            const editBtn = document.getElementById('editBtn');
+            const saveBtn = document.getElementById('saveBtn');
 
-        function sendBookingWhatsApp(e) {
-            e.preventDefault();
-            const name = document.getElementById('cust-name').value;
-            const option = document.getElementById('cust-option').value;
-            const date = document.getElementById('cust-date').value;
-            const address = document.getElementById('cust-address').value;
+            section.contentEditable = "false";
+            document.body.classList.remove('editing');
+            editBtn.style.display = "inline-block";
+            saveBtn.style.display = "none";
 
-            const message = `Hello Sneh Mehndi! I would like to book a Mehndi session.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Selected Package:* ${encodeURIComponent(option)}%0A*Event Date:* ${encodeURIComponent(date)}%0A*Address:* ${encodeURIComponent(address)}`;
-            
-            window.open(`https://wa.me/918979459971?text=${message}`, '_blank');
+            // Save changes locally in browser
+            localStorage.setItem('sneh_mehndi_content', section.innerHTML);
+            alert("Changes saved successfully!");
         }
     </script>
 </body>
 </html>
+
+                        
